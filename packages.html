@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Packages & Pricing - CleanQatar</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+  <div id="app">
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header-inner">
+          <div class="logo">
+            <a href="/">
+              <span>Clean<strong>Qatar</strong></span>
+            </a>
+          </div>
+          <nav class="main-nav">
+            <ul class="nav-list">
+              <li><a href="/">Home</a></li>
+              <li><a href="/about.html">About Us</a></li>
+              <li><a href="/services.html">Services</a></li>
+              <li><a href="/packages.html" class="active">Packages</a></li>
+              <li><a href="/reviews.html">Reviews</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+              <li class="lang-switch"><a href="#" id="langToggle">العربية</a></li>
+            </ul>
+          </nav>
+          <div class="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html">About Us</a></li>
+        <li><a href="/services.html">Services</a></li>
+        <li><a href="/packages.html" class="active">Packages</a></li>
+        <li><a href="/reviews.html">Reviews</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li class="lang-switch"><a href="#" id="mobileLangToggle">العربية</a></li>
+      </ul>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Packages & Pricing</h1>
+        <div class="breadcrumb">
+          <a href="/">Home</a> / <span>Packages & Pricing</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Intro -->
+    <section class="pricing-intro section-padding">
+      <div class="container">
+        <div class="pricing-intro-content" data-aos="fade-up">
+          <div class="section-header">
+            <h2>Transparent & Flexible Pricing</h2>
+            <p>Choose the perfect package for your needs</p>
+          </div>
+          <p class="intro-text">At CleanQatar, we offer competitive pricing and flexible packages to suit different needs and budgets. Our pricing is transparent with no hidden costs. Choose from our standard packages or contact us for a customized solution tailored to your specific requirements.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Tabs -->
+    <section class="pricing-tabs section-padding bg-light">
+      <div class="container">
+        <div class="tab-container" data-aos="fade-up">
+          <div class="tab-header">
+            <button class="tab-button active" data-tab="residential">Residential</button>
+            <button class="tab-button" data-tab="commercial">Commercial</button>
+            <button class="tab-button" data-tab="specialized">Specialized</button>
+          </div>
+          
+          <!-- Residential Packages -->
+          <div class="tab-content active" id="residential">
+            <div class="pricing-grid">
+              <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="pricing-header">
+                  <div class="pricing-icon">
+                    <i class="fas fa-home"></i>
+                  </div>
+                  <h3>Basic Home</h3>
+                  <div class="pricing-price">
+                    <span class="currency">QAR</span>
+                    <span class="amount">150</span>
+                    <span class="duration">/ 3 hours</span>
+                  </div>
+                </div>
+                <div class="pricing-body">
+                  <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> Dusting all accessible surfaces</li>
+                    <li><i class="fas fa-check"></i> Vacuuming carpets and floors</li>
+                    <li><i class="fas fa-check"></i> Bathroom cleaning</li>
+                    <li><i class="fas fa-check"></i> Kitchen cleaning</li>
+                    <li><i class="fas fa-check"></i> Making beds</li>
+                    <li class="unavailable"><i class="fas fa-times"></i> Window cleaning</li>
+                    <li class="unavailable"><i class="fas fa-times"></i> Fridge cleaning</li>
+                  </ul>
+                  <div class="pricing-footer">
+                    <a href="/book.html?package=basic-home" class="btn btn-outline">Book Now</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="200">
+                <div class="pricing-tag">Most Popular</div>
+                <div class="pricing-header">
+                  <div class="pricing-icon">
+                    <i class="fas fa-broom"></i>
+                  </div>
+                  <h3>Standard Home</h3>
+                  <div class="pricing-price">
+                    <span class="currency">QAR</span>
+                    <span class="amount">500</span>
+                    <span class="duration">/ week</span>
+                  </div>
+                </div>
+                <div class="pricing-body">
+                  <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> All Basic features</li>
+                    <li><i class="fas fa-check"></i> Window cleaning</li>
+                    <li><i class="fas fa-check"></i> Fridge cleaning</li>
+                    <li><i class="fas fa-check"></i> Oven cleaning</li>
+                    <li><i class="fas fa-check"></i> Changing linens</li>
+                    <li><i class="fas fa-check"></i> Ironing (limited items)</li>
+                    <li class="unavailable"><i class="fas fa-times"></i> Full deep cleaning</li>
+                  </ul>
+                  <div class="pricing-footer">
+                    <a href="/book.html?package=standard-home" class="btn btn-primary">Book Now</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="pricing-header">
+                  <div class="pricing-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h3>Premium Home</h3>
+                  <div class="pricing-price">
+                    <span class="currency">QAR</span>
+                    <span class="amount">1800</span>
+                    <span class="duration">/ month</span>
+                  </div>
+                </div>
+                <div class="pricing-body">
+                  <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> All Standard features</li>
+                    <li><i class="fas fa-check"></i> Deep cleaning of all areas</li>
+                    <li><i class="fas fa-check"></i> Full ironing service</li>
+                    <li><i class="fas fa-check"></i> Organizing closets</li>
+                    <li><i class="fas fa-check"></i> Outside window cleaning</li>
+                    <li><i class="fas fa-check"></i> Balcony/patio cleaning</li>
+                    <li><i class="fas fa-check"></i> Priority scheduling</li>
+                  </ul>
+                  <div class="pricing-footer">
+                    <a href="/book.html?package=premium-home" class="btn btn-outline">Book Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Commercial Packages -->
+          <div class="tab-content" id="commercial">
+            <div class="pricing-grid">
+              <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="pricing-header">
+                  <div class="pricing-icon">
+                    <i class="fas fa-building"></i>
+                  </div>
+                  <h3>Small Office</h3>
+                  <div class="pricing-price">
+                    <span class="currency">QAR</span>
+                    <span class="amount">600</span>
+                    <span class="duration">/ week</span>
+                  </div>
+                </div>
+                <div class="pricing-body">
+                  <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> Up to 100 sq.m. office space</li>
+                    <li><i class="fas fa-check"></i> Regular dusting and vacuuming</li>
+                    <li><i class="fas fa-check"></i> Bathroom cleaning</li>
+                    <li><i class="fas fa-check"></i> Waste disposal</li>
+                    <li><i class="fas fa-check"></i> Kitchen/pantry cleaning</li>
+                    <li class="unavailable"><i class="fas fa-times"></i> Window cleaning</li>
+                    <li class="unavailable"><i class="fas fa-times"></i> Carpet shampooing</li>
+                  </ul>
+                  <div class="pricing-footer">
+                    <a href="/book.html?package=small-office" class="btn btn-outline">Book Now</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="200">
+                <div class="pricing-tag">Most Popular</div>
+                <div class="pricing-header">
+                  <div class="pricing-icon">
+                    <i class="fas fa-city"></i>
+                  </div>
+                  <h3>Medium Office</h3>
+                  <div class="pricing-price">
+                    <span class="currency">QAR</span>
+                    <span class="amount">1200</span>
+                    <span class="duration">/ week</span>
+                  </div>
+                </div>
+                <div class="pricing-body">
+                  <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> 100-300 sq.m. office space</li>
+                    <li><i class="fas fa-check"></i> All Small Office features</li>
+                    <li><i class="fas fa-check"></i> Window cleaning</li>
+                    <li><i class="fas fa-check"></i> Disinfection of high-touch areas</li>
+                    <li><i class="fas fa-check"></i> Meeting room preparation</li>
+                    <li><i class="fas fa-check"></i> Restroom supply restocking</li>
+                    <li class="unavailable"><i class="fas fa-times"></i> Floor polishing</li>
+                  </ul>
+                  <div class="pricing-footer">
+                    <a href="/book.html?package=medium-office" class="btn btn-primary">Book Now</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="pricing-header">
+                  <div class="pricing-icon">
+                    <i class="fas fa-building-columns"></i>
+                  </div>
+                  <h3>Large Office</h3>
+                  <div class="pricing-price">
+                    <span class="currency">QAR</span>
+                    <span class="amount">3000+</span>
+                    <span class="duration">/ week</span>
+                  </div>
+                </div>
+                <div class="pricing-body">
+                  <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> Over 300 sq.m. office space</li>
+                    <li><i class="fas fa-check"></i> All Medium Office features</li>
+                    <li><i class="fas fa-check"></i> Carpet shampooing</li>
+                    <li><i class="fas fa-check"></i> Floor polishing</li>
+                    <li><i class="fas fa-check"></i> Furniture detailing</li>
+                    <li><i class="fas fa-check"></i> Weekend service available</li>
+                    <li><i class="fas fa-check"></i> Custom cleaning schedule</li>
+                  </ul>
+                  <div class="pricing-footer">
+                    <a href="/book.html?package=large-office" class="btn btn-outline">Book Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Specialized Packages -->
+          <div class="tab-content" id="specialized">
+            <div class="pricing-grid">
+              <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="pricing-header">
+                  <div class="pricing-icon">
+                    <i class="fas fa-virus-slash"></i>
+                  </div>
+                  <h3>Sanitization</h3>
+                  <div class="pricing-price">
+                    <span class="currency">QAR</span>
+                    <span class="amount">From 300</span>
+                    <span class="duration">/ session</span>
+                  </div>
+                </div>
+                <div class="pricing-body">
+                  <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> Hospital-grade disinfection</li>
+                    <li><i class="fas fa-check"></i> Treatment of high-touch surfaces</li>
+                    <li><i class="fas fa-check"></i> Electrostatic spraying</li>
+                    <li><i class="fas fa-check"></i> EPA-approved products</li>
+                    <li><i class="fas fa-check"></i> Odor elimination</li>
+                  </ul>
+                  <div class="pricing-footer">
+                    <a href="/book.html?package=sanitization" class="btn btn-outline">Book Now</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="pricing-header">
+                  <div class="pricing-icon">
+                    <i class="fas fa-couch"></i>
+                  </div>
+                  <h3>Carpet & Upholstery</h3>
+                  <div class="pricing-price">
+                    <span class="currency">QAR</span>
+                    <span class="amount">From 250</span>
+                    <span class="duration">/ service</span>
+                  </div>
+                </div>
+                <div class="pricing-body">
+                  <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> Deep carpet cleaning</li>
+                    <li><i class="fas fa-check"></i> Upholstery refreshing</li>
+                    <li><i class="fas fa-check"></i> Stain removal</li>
+                    <li><i class="fas fa-check"></i> Odor treatment</li>
+                    <li><i class="fas fa-check"></i> Fabric protection application</li>
+                  </ul>
+                  <div class="pricing-footer">
+                    <a href="/book.html?package=carpet-upholstery" class="btn btn-outline">Book Now</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="300">
+                <div class="pricing-tag">Most Popular</div>
+                <div class="pricing-header">
+                  <div class="pricing-icon">
+                    <i class="fas fa-hammer"></i>
+                  </div>
+                  <h3>Post-Construction</h3>
+                  <div class="pricing-price">
+                    <span class="currency">QAR</span>
+                    <span class="amount">Custom</span>
+                    <span class="duration">/ project</span>
+                  </div>
+                </div>
+                <div class="pricing-body">
+                  <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> Construction debris removal</li>
+                    <li><i class="fas fa-check"></i> Fine dust cleaning</li>
+                    <li><i class="fas fa-check"></i> Surface detailing</li>
+                    <li><i class="fas fa-check"></i> Window and glass cleaning</li>
+                    <li><i class="fas fa-check"></i> Floor treatment</li>
+                    <li><i class="fas fa-check"></i> Final inspection</li>
+                  </ul>
+                  <div class="pricing-footer">
+                    <a href="/book.html?package=post-construction" class="btn btn-primary">Get Quote</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Special Offers -->
+    <section class="special-offers section-padding">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Special Offers</h2>
+          <p>Take advantage of our limited-time deals</p>
+        </div>
+        
+        <div class="offers-grid">
+          <div class="offer-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="offer-badge">Save 15%</div>
+            <div class="offer-content">
+              <h3>New Customer Discount</h3>
+              <p>Get 15% off your first booking with us!</p>
+              <div class="offer-code">
+                <span>Use code: </span>
+                <strong>NEWCLEAN15</strong>
+              </div>
+              <a href="/book.html" class="btn btn-primary btn-sm">Book Now</a>
+            </div>
+          </div>
+          
+          <div class="offer-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="offer-badge">Save 20%</div>
+            <div class="offer-content">
+              <h3>Compound Residents</h3>
+              <p>Special rates for compound and community residents</p>
+              <div class="offer-code">
+                <span>Use code: </span>
+                <strong>COMPOUND20</strong>
+              </div>
+              <a href="/book.html" class="btn btn-primary btn-sm">Book Now</a>
+            </div>
+          </div>
+          
+          <div class="offer-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="offer-badge">Free Service</div>
+            <div class="offer-content">
+              <h3>Loyalty Program</h3>
+              <p>Book 10 services and get your 11th cleaning free!</p>
+              <div class="offer-note">
+                <span>Automatically applied</span>
+              </div>
+              <a href="/contact.html" class="btn btn-primary btn-sm">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Custom Quote -->
+    <section class="custom-quote section-padding bg-light">
+      <div class="container">
+        <div class="custom-quote-content" data-aos="fade-up">
+          <div class="section-header">
+            <h2>Need a Custom Solution?</h2>
+            <p>Get a personalized quote tailored to your specific needs</p>
+          </div>
+          <p class="quote-text">We understand that every space and situation is unique. If you don't see a package that fits your needs, or if you have special requirements, our team is ready to create a customized cleaning solution just for you.</p>
+          <div class="quote-buttons">
+            <a href="/contact.html" class="btn btn-primary">Request Custom Quote</a>
+            <a href="https://wa.me/97455555555" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="footer-logo">
+              <span>Clean<strong>Qatar</strong></span>
+            </div>
+            <p>Professional cleaning services across Qatar. We provide quality cleaning for homes, offices, villas, and more.</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about.html">About Us</a></li>
+              <li><a href="/services.html">Services</a></li>
+              <li><a href="/packages.html">Packages</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="/services.html#home-cleaning">Home Cleaning</a></li>
+              <li><a href="/services.html#office-cleaning">Office Cleaning</a></li>
+              <li><a href="/services.html#villa-cleaning">Villa Cleaning</a></li>
+              <li><a href="/services.html#carpet-cleaning">Carpet Cleaning</a></li>
+              <li><a href="/services.html#sanitization">Sanitization</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <ul class="contact-info">
+              <li><i class="fas fa-phone-alt"></i> +974 5555 5555</li>
+              <li><i class="fas fa-envelope"></i> info@cleanqatar.com</li>
+              <li><i class="fas fa-map-marker-alt"></i> Al Sadd, Doha, Qatar</li>
+              <li><i class="fas fa-clock"></i> Open: 7 AM - 10 PM</li>
+            </ul>
+            <a href="https://wa.me/97455555555" class="btn btn-whatsapp btn-sm"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 CleanQatar. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-buttons">
+      <a href="https://wa.me/97455555555" class="floating-btn whatsapp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="tel:+97455555555" class="floating-btn phone">
+        <i class="fas fa-phone-alt"></i>
+      </a>
+    </div>
+  </div>
+
+  <script type="module" src="/js/main.js"></script>
+  <script type="module" src="/js/tabs.js"></script>
+</body>
+</html>

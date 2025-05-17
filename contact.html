@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - CleanQatar</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+  <div id="app">
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header-inner">
+          <div class="logo">
+            <a href="/">
+              <span>Clean<strong>Qatar</strong></span>
+            </a>
+          </div>
+          <nav class="main-nav">
+            <ul class="nav-list">
+              <li><a href="/">Home</a></li>
+              <li><a href="/about.html">About Us</a></li>
+              <li><a href="/services.html">Services</a></li>
+              <li><a href="/packages.html">Packages</a></li>
+              <li><a href="/reviews.html">Reviews</a></li>
+              <li><a href="/contact.html" class="active">Contact</a></li>
+              <li class="lang-switch"><a href="#" id="langToggle">العربية</a></li>
+            </ul>
+          </nav>
+          <div class="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html">About Us</a></li>
+        <li><a href="/services.html">Services</a></li>
+        <li><a href="/packages.html">Packages</a></li>
+        <li><a href="/reviews.html">Reviews</a></li>
+        <li><a href="/contact.html" class="active">Contact</a></li>
+        <li class="lang-switch"><a href="#" id="mobileLangToggle">العربية</a></li>
+      </ul>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <div class="breadcrumb">
+          <a href="/">Home</a> / <span>Contact Us</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="contact-info-section section-padding">
+      <div class="container">
+        <div class="contact-info-grid">
+          <div class="contact-info-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3>Our Location</h3>
+            <p>Al Sadd Street, Doha</p>
+            <p>Qatar, 23401</p>
+            <a href="https://goo.gl/maps/eCE48zJYeGRMHJ3v7" target="_blank" class="contact-link">View on Map</a>
+          </div>
+          
+          <div class="contact-info-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="contact-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <h3>Phone Number</h3>
+            <p>+974 5555 5555</p>
+            <p>+974 4444 4444</p>
+            <a href="tel:+97455555555" class="contact-link">Call Now</a>
+          </div>
+          
+          <div class="contact-info-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3>Email Address</h3>
+            <p>info@cleanqatar.com</p>
+            <p>support@cleanqatar.com</p>
+            <a href="mailto:info@cleanqatar.com" class="contact-link">Send Email</a>
+          </div>
+          
+          <div class="contact-info-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="contact-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h3>Working Hours</h3>
+            <p>Monday - Saturday: 7 AM - 10 PM</p>
+            <p>Sunday: 9 AM - 8 PM</p>
+            <a href="/book.html" class="contact-link">Book Service</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section section-padding bg-light">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-form-wrapper" data-aos="fade-right">
+            <div class="section-header left-align">
+              <h2>Get In Touch</h2>
+              <p>Send us a message and we'll get back to you</p>
+            </div>
+            
+            <form id="contactForm" class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Your Name *</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="contactEmail">Email *</label>
+                  <input type="email" id="contactEmail" name="email" required>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="contactPhone">Phone Number *</label>
+                <input type="tel" id="contactPhone" name="phone" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject">
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Your Message *</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              
+              <div class="form-submit">
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </div>
+            </form>
+          </div>
+          
+          <div class="map-container" data-aos="fade-left">
+            <div class="map-responsive">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28949.810454946987!2d51.476406!3d25.286308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45c534ffdce87f%3A0x1cfa88cf812b4032!2sDoha%2C%20Qatar!5e0!3m2!1sen!2sus!4v1623843889432!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            
+            <div class="connect-social">
+              <h3>Connect With Us</h3>
+              <p>Follow us on social media to stay updated with our latest offers and cleaning tips.</p>
+              <div class="social-icons large">
+                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section section-padding">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Frequently Asked Questions</h2>
+          <p>Find answers to common questions about our services</p>
+        </div>
+        
+        <div class="faq-accordion" data-aos="fade-up">
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>What areas in Qatar do you service?</h3>
+              <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+            </div>
+            <div class="accordion-content">
+              <p>We provide cleaning services throughout Doha and the surrounding areas, including West Bay, The Pearl, Al Waab, Lusail, Al Sadd, and other locations across Qatar. If you're unsure if we service your area, please contact us.</p>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>How far in advance should I book?</h3>
+              <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+            </div>
+            <div class="accordion-content">
+              <p>We recommend booking at least 48 hours in advance to ensure availability. However, we understand that cleaning needs can arise unexpectedly, so we do our best to accommodate last-minute requests when possible.</p>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>What cleaning products do you use?</h3>
+              <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+            </div>
+            <div class="accordion-content">
+              <p>We use high-quality, eco-friendly cleaning products that are effective yet safe for your family, pets, and the environment. If you have specific product preferences or allergies, please let us know, and we'll be happy to accommodate your needs.</p>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>Do I need to be home during the cleaning?</h3>
+              <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+            </div>
+            <div class="accordion-content">
+              <p>It's not necessary for you to be present during the cleaning, but you will need to arrange access for our team. Many clients provide a key or have a building security system that allows access. We ensure all our staff are thoroughly vetted and trustworthy.</p>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>What forms of payment do you accept?</h3>
+              <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+            </div>
+            <div class="accordion-content">
+              <p>We accept various payment methods including cash, credit/debit cards, bank transfers, and mobile payment apps. For regular clients, we also offer monthly invoicing options.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="footer-logo">
+              <span>Clean<strong>Qatar</strong></span>
+            </div>
+            <p>Professional cleaning services across Qatar. We provide quality cleaning for homes, offices, villas, and more.</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about.html">About Us</a></li>
+              <li><a href="/services.html">Services</a></li>
+              <li><a href="/packages.html">Packages</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="/services.html#home-cleaning">Home Cleaning</a></li>
+              <li><a href="/services.html#office-cleaning">Office Cleaning</a></li>
+              <li><a href="/services.html#villa-cleaning">Villa Cleaning</a></li>
+              <li><a href="/services.html#carpet-cleaning">Carpet Cleaning</a></li>
+              <li><a href="/services.html#sanitization">Sanitization</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <ul class="contact-info">
+              <li><i class="fas fa-phone-alt"></i> +974 5555 5555</li>
+              <li><i class="fas fa-envelope"></i> info@cleanqatar.com</li>
+              <li><i class="fas fa-map-marker-alt"></i> Al Sadd, Doha, Qatar</li>
+              <li><i class="fas fa-clock"></i> Open: 7 AM - 10 PM</li>
+            </ul>
+            <a href="https://wa.me/97455555555" class="btn btn-whatsapp btn-sm"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 CleanQatar. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-buttons">
+      <a href="https://wa.me/97455555555" class="floating-btn whatsapp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="tel:+97455555555" class="floating-btn phone">
+        <i class="fas fa-phone-alt"></i>
+      </a>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-icon success">
+          <i class="fas fa-check-circle"></i>
+        </div>
+        <h3>Message Sent!</h3>
+        <p>Thank you for contacting us. We'll respond to your inquiry as soon as possible.</p>
+        <button class="btn btn-primary modal-btn">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/js/main.js"></script>
+  <script type="module" src="/js/contact.js"></script>
+</body>
+</html>

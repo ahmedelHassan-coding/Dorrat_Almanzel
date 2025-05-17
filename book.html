@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Now - CleanQatar</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+  <div id="app">
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header-inner">
+          <div class="logo">
+            <a href="/">
+              <span>Clean<strong>Qatar</strong></span>
+            </a>
+          </div>
+          <nav class="main-nav">
+            <ul class="nav-list">
+              <li><a href="/">Home</a></li>
+              <li><a href="/about.html">About Us</a></li>
+              <li><a href="/services.html">Services</a></li>
+              <li><a href="/packages.html">Packages</a></li>
+              <li><a href="/reviews.html">Reviews</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+              <li class="lang-switch"><a href="#" id="langToggle">العربية</a></li>
+            </ul>
+          </nav>
+          <div class="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html">About Us</a></li>
+        <li><a href="/services.html">Services</a></li>
+        <li><a href="/packages.html">Packages</a></li>
+        <li><a href="/reviews.html">Reviews</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li class="lang-switch"><a href="#" id="mobileLangToggle">العربية</a></li>
+      </ul>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Book Now</h1>
+        <div class="breadcrumb">
+          <a href="/">Home</a> / <span>Book Now</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking-section section-padding">
+      <div class="container">
+        <div class="booking-grid">
+          <div class="booking-form-container" data-aos="fade-right">
+            <div class="section-header left-align">
+              <h2>Book Your Cleaning Service</h2>
+              <p>Fill out the form below to request a service</p>
+            </div>
+            
+            <form id="bookingForm" class="booking-form">
+              <div class="form-group">
+                <label for="fullname">Full Name *</label>
+                <input type="text" id="fullname" name="fullname" required>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">Phone Number *</label>
+                  <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email">
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="address">Address *</label>
+                <input type="text" id="address" name="address" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="service">Service Type *</label>
+                <select id="service" name="service" required>
+                  <option value="">Select a service</option>
+                  <option value="home-cleaning">Home Cleaning</option>
+                  <option value="office-cleaning">Office Cleaning</option>
+                  <option value="villa-cleaning">Villa & Palace Cleaning</option>
+                  <option value="carpet-cleaning">Carpet & Upholstery Cleaning</option>
+                  <option value="post-construction">Post-Construction Cleaning</option>
+                  <option value="sanitization">Disinfection & Sanitization</option>
+                </select>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="date">Preferred Date *</label>
+                  <input type="date" id="date" name="date" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="time">Preferred Time *</label>
+                  <select id="time" name="time" required>
+                    <option value="">Select time</option>
+                    <option value="morning">Morning (8AM - 12PM)</option>
+                    <option value="afternoon">Afternoon (12PM - 4PM)</option>
+                    <option value="evening">Evening (4PM - 8PM)</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="package">Package (Optional)</label>
+                <select id="package" name="package">
+                  <option value="">Select a package</option>
+                  <option value="basic-home">Basic Home (3 hours)</option>
+                  <option value="standard-home">Standard Home (Weekly)</option>
+                  <option value="premium-home">Premium Home (Monthly)</option>
+                  <option value="small-office">Small Office</option>
+                  <option value="medium-office">Medium Office</option>
+                  <option value="large-office">Large Office</option>
+                  <option value="custom">Custom Package</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="notes">Additional Notes</label>
+                <textarea id="notes" name="notes" rows="4"></textarea>
+              </div>
+              
+              <div class="form-submit">
+                <button type="submit" class="btn btn-primary">Submit Request</button>
+              </div>
+            </form>
+          </div>
+          
+          <div class="booking-sidebar" data-aos="fade-left">
+            <div class="booking-info-card">
+              <h3>How It Works</h3>
+              <ul class="booking-steps">
+                <li>
+                  <div class="step-number">1</div>
+                  <div class="step-content">
+                    <h4>Submit Your Request</h4>
+                    <p>Fill out the booking form with your details and service requirements.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="step-number">2</div>
+                  <div class="step-content">
+                    <h4>Confirmation</h4>
+                    <p>We'll contact you to confirm your booking and discuss any specific requirements.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="step-number">3</div>
+                  <div class="step-content">
+                    <h4>Service Delivery</h4>
+                    <p>Our professional team arrives at your location at the scheduled time.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="step-number">4</div>
+                  <div class="step-content">
+                    <h4>Satisfaction Check</h4>
+                    <p>We ensure your complete satisfaction with our service.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="need-help-card">
+              <h3>Need Help?</h3>
+              <p>If you need assistance with booking or have questions about our services, feel free to contact us directly.</p>
+              <div class="contact-options">
+                <a href="https://wa.me/97455555555" class="btn btn-whatsapp btn-block"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+                <a href="tel:+97455555555" class="btn btn-outline btn-block"><i class="fas fa-phone-alt"></i> Call Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section section-padding bg-light">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>What Our Customers Say</h2>
+          <p>Don't just take our word for it</p>
+        </div>
+        <div class="testimonials-slider" data-aos="fade-up">
+          <div class="testimonial-container" id="testimonials-container">
+            <div class="testimonial-slide">
+              <div class="testimonial-content">
+                <div class="testimonial-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p>"Booking was simple and straightforward. The team arrived on time and did an excellent job cleaning our villa. Very impressed with the service!"</p>
+                <div class="testimonial-author">
+                  <h4>Fatima Al-Sulaiti</h4>
+                  <p>Al Waab, Qatar</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="testimonial-content">
+                <div class="testimonial-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p>"I've been using CleanQatar for my office space for over 6 months now. Their attention to detail and consistency is remarkable. Highly recommended!"</p>
+                <div class="testimonial-author">
+                  <h4>James Wilson</h4>
+                  <p>West Bay, Qatar</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="testimonial-content">
+                <div class="testimonial-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>"What I love most about CleanQatar is their flexibility. They accommodate my schedule and always deliver excellent results. Their booking system is also very convenient."</p>
+                <div class="testimonial-author">
+                  <h4>Mariam Al-Attiyah</h4>
+                  <p>The Pearl, Qatar</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-controls">
+            <button class="testimonial-btn prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="testimonial-btn next"><i class="fas fa-chevron-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="footer-logo">
+              <span>Clean<strong>Qatar</strong></span>
+            </div>
+            <p>Professional cleaning services across Qatar. We provide quality cleaning for homes, offices, villas, and more.</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about.html">About Us</a></li>
+              <li><a href="/services.html">Services</a></li>
+              <li><a href="/packages.html">Packages</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="/services.html#home-cleaning">Home Cleaning</a></li>
+              <li><a href="/services.html#office-cleaning">Office Cleaning</a></li>
+              <li><a href="/services.html#villa-cleaning">Villa Cleaning</a></li>
+              <li><a href="/services.html#carpet-cleaning">Carpet Cleaning</a></li>
+              <li><a href="/services.html#sanitization">Sanitization</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <ul class="contact-info">
+              <li><i class="fas fa-phone-alt"></i> +974 5555 5555</li>
+              <li><i class="fas fa-envelope"></i> info@cleanqatar.com</li>
+              <li><i class="fas fa-map-marker-alt"></i> Al Sadd, Doha, Qatar</li>
+              <li><i class="fas fa-clock"></i> Open: 7 AM - 10 PM</li>
+            </ul>
+            <a href="https://wa.me/97455555555" class="btn btn-whatsapp btn-sm"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 CleanQatar. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-buttons">
+      <a href="https://wa.me/97455555555" class="floating-btn whatsapp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="tel:+97455555555" class="floating-btn phone">
+        <i class="fas fa-phone-alt"></i>
+      </a>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-icon success">
+          <i class="fas fa-check-circle"></i>
+        </div>
+        <h3>Booking Successful!</h3>
+        <p>Thank you for your booking request. We'll contact you shortly to confirm the details.</p>
+        <button class="btn btn-primary modal-btn">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/js/main.js"></script>
+  <script type="module" src="/js/booking.js"></script>
+</body>
+</html>
